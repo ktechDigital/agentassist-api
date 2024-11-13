@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Configurações do Fuse.js
-schedule.scheduleJob("0 0 0 * * *", updateRoutine);
+schedule.scheduleJob("0 * * * * *", updateRoutine);
 const fuseOptions = {
   keys: ["TITULO", "DESCRIPTION", "SOLUTION"],
   threshold: 0.7,
